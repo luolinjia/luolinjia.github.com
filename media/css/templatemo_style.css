@@ -1,0 +1,330 @@
+/*
+CSS Credit: http://www.cssmoban.com
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #494234;
+	background: url(images/templatemo_body_bg.png);
+}
+		
+a:link, a:visited { color: #191815; text-decoration: none; font-weight: normal; font-style: italic;} 
+a:active, a:hover { color: #191815; text-decoration: underline;}
+
+p { margin: 0px; padding: 0px; text-align: justify; }
+
+img { margin: 0px; padding: 0px; border: none; }
+
+.cleaner { clear: both; width: 100%; height: 0px; font-size: 0px;  }
+
+.cleaner_h10 { clear: both; width:100%; height: 10px; }
+.cleaner_h20 { clear: both; width:100%; height: 20px; }
+.cleaner_h30 { clear: both; width:100%; height: 30px; }
+.cleaner_h40 { clear: both; width:100%; height: 40px; }
+.cleaner_h50 { clear: both; width:100%; height: 50px; }
+.cleaner_h60 { clear: both; width:100%; height: 60px; }
+
+.divider {
+	clear: both;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+	background: url(images/templatemo_horizontal_divider.jpg) bottom repeat-x;
+}
+
+.fl { float: left; }
+.fr { float: right; }
+
+.m_right { margin-right: 30px; }
+
+.button_01 a {
+	display: block;
+	width: 120px;
+	height: 22px;
+	padding: 4px 0 0 0;
+	background: url(images/templatemo_button_01.jpg) no-repeat;
+	
+	color: #dcc673;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+
+h1 {
+	margin: 0px;
+	padding: 2px 0;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+h2 {
+	margin: 0 0 15px 0;
+	padding: 2px 0 10px 0;
+	font-size: 26px;
+	font-weight: normal;
+	color: #494234;
+	font-style: italic;
+	border-bottom: 2px solid #494234;
+}
+
+h3 {
+	margin: 0 0 10px 0;
+	padding: 2px 0 15px 0;
+	font-size: 26px;
+	font-weight: normal;
+	color: #f5d96c;	
+}
+
+h4 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+h5 {
+	display: block;
+	margin: 0;
+	padding: 10px 0px;
+	width: 280px;
+	height: 45px;
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+	letter-spacing: 2px;
+	background: url(images/templatemo_footer_box_top.jpg) no-repeat;
+}
+
+.image_wrapper {
+	margin-top: 3px;
+	margin-bottom: 5px;
+}
+
+.fl_image {
+	float: left;
+	margin-right: 20px 
+}
+
+.fr_image {
+	float: right;
+	margin-left: 20px 
+}
+
+.list_01 {
+	margin: 0 0 20px 40px;
+	padding: 0px;
+}
+
+.list_01 li {
+	margin: 0;
+	padding: 0 0 15px 0;
+	list-style-image: url(images/templatemo_list_icon.png);
+	text-decoration: underline;	
+}
+
+.list_01 li a {
+	font-style: normal;
+	text-decoration: underline;
+}
+
+#templatemo_container {
+	position: relative;
+	width: 900px;
+	margin: 0 auto;
+	background: url(images/templatemo_container_top.jpg) top left no-repeat;
+}
+
+#templatemo_container #container_bottom { 
+	position: absolute;
+	width: 900px;
+	height: 460px;
+	bottom: 0px;
+	left: 0px;
+	background: url(images/templatemo_container_bottom.jpg) no-repeat;
+}
+
+#templatemo_container #bulb {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 337px;
+	height: 273px;
+	background: url(images/templatemo_light_off.png) no-repeat;
+}
+
+#templatemo_container #bulb:hover {
+	background: url(images/templatemo_light_on.png) no-repeat;
+}
+
+/* site title bar */
+
+#templatemo_site_title_bar {
+	width: 960px;
+	height: 150px;
+	padding: 0 10px;
+	background: url(images/templatemo_top_bar.jpg) no-repeat;
+}
+
+#templatemo_site_title_bar  #site_title {
+	float: left;
+	width: 400px;
+	margin-left: 150px;
+	padding: 50px 0 0 0;
+	text-align: left;
+}
+
+#site_title h1 a {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	font-size: 30px;
+	color: #947c58;
+	font-weight: bold;
+	text-decoration: none;
+	font-style: normal;
+}
+
+#site_title h1 a:hover {
+	font-weight: bold;	
+	text-decoration: none;
+}
+
+#site_title h1 span {
+	display: block;
+	margin-top: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ada393;
+	line-height: 15px;
+	font-weight: normal;
+}
+
+/* end of site title bar */
+
+/* menu */
+
+#templatemo_menu {
+	clear: both;
+	width: 750px;
+	height: 128px;
+	padding: 0 65px 0 85px;
+	background: url(images/templatemo_menu_bg.png) no-repeat;
+}
+
+#templatemo_menu ul {
+	margin: 0px;
+	padding: 30px 0 0 20px;
+	list-style: none;
+}
+
+#templatemo_menu ul li {
+	padding: 0px;
+	margin: 0px;
+	display: inline;
+}
+
+#templatemo_menu ul li a {
+	float: left;
+	display: block;
+	padding: 0 20px;
+	font-size: 14px;
+	font-style: italic;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	color: #4f483a;	
+	outline: none;
+}
+
+#templatemo_menu li a:hover, #templatemo_menu li .current {
+	color: #2f291d;
+}
+
+/* end of menu */
+
+/* content */
+#templatemo_content {
+	clear: both;
+	position: relative;
+	width: 670px;
+	padding: 0 105px 0 125px;
+	background: url(images/templatemo_content_bg.png) repeat-y;
+}
+
+#content_bottom {
+	clear: both;
+	width: 900px;
+	height: 105px;
+	background: url(images/templatemo_content_bottom.png) no-repeat;
+}
+
+#templatemo_content .section_w670 {
+	clear: both;
+	width: 670px;
+}
+
+.section_w670 p {
+	margin-bottom: 15px;	
+}
+
+.section_w330 {
+	width: 330px;
+}
+
+.section_w330_content {
+	margin-right: 30px;
+}
+
+.contact_section {
+	width: 230px;
+	height: 150px;
+	padding: 60px 50px 0 50px;
+	background: url(images/templatemo_contact_bg.png) no-repeat;
+}
+
+/* end of content */
+
+/* footer */
+#templatemo_footer {
+	clear: both;
+	width: 750px;
+	height: 41px;
+	padding: 15px 65px 15px 85px;
+	text-align: center;
+	background: url(images/templatemo_footer_bg.png) no-repeat;
+	color: #ac9058;
+}
+
+#templatemo_footer a {
+	font-weight: normal;
+	color: #ac9058;
+	text-decoration: underline;
+	font-style: normal;
+}
+
+#templatemo_footer a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#templatemo_footer .footer_menu {
+	margin: 0 0 5px 0;
+	padding: 0px;
+	list-style: none;
+}
+
+.footer_menu li {
+	margin: 0px;
+	padding: 0 20px;
+	display: inline;
+	border-right: 1px solid #ac9058;
+}
+
+.footer_menu .last_menu {
+	border: none;
+}
+/* end of footer */
