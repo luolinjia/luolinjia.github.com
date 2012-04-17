@@ -10,7 +10,7 @@ Me? Is very simple, currently is an inauguration in [Yucheng](http://www.yucheng
 
 由感想 -> 感悟 -> 升华 -> 实践 -> 思考 -> 消亡(或者说是重生)
 
-接下来,就是我们'S 空间.
+接下来,时间交给我们.
 
 =======
 >>>>>>> 
