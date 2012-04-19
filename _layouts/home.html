@@ -19,6 +19,10 @@
     color:#bfbfbf;
     margin-bottom: 10px;
   }
+.fl{
+float:left;
+padding-right:20px;
+}
   /* Specify class=linenums on a pre to get line numbering */
   ol.linenums {
     margin: 0 0 0 33px; /* IE indents via margin-left */
@@ -33,7 +37,8 @@
 </head>
 <body>
   <div class="container">
-  <div><img src="../images/index/title.png" alt="ideex" /></div>
+<div class="indextop">
+  <div class="fl"><img src="../images/index/title.png" alt="ideex" /></div>
   <h1 class="sitename" style="display:none;">Ideex</h1>
   <h2 class="sitedefine">骆林佳的个人网站</h1>
   <ul class="nav pills">
@@ -42,6 +47,7 @@
   <li><a href="/en/">English</a></li>
   <!--<li><a href="/tech/">Technology</a></li>-->
 </ul>
+</div>
 {% if page.avatar %}  {% endif %}
 {{ content }}
 <footer>
