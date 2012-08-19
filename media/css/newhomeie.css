@@ -1,0 +1,99 @@
+﻿@charset "UTF-8"
+
+html{
+  overflow-x:hidden;
+}
+
+
+li{
+  list-style-type:none;
+}
+
+
+#wrap{
+  min-width: 100%;
+  min-height: 100%;
+  padding:0px;
+  margin: 0 auto;
+}
+#header{
+  width: 100%;
+  height: 153px;
+  z-index: 9999998;
+}
+#menu{
+  float: right;
+  width:300px;
+  height:120px;
+  margin-right:51px;
+  margin-top:27px;
+  z-index: 99999999;
+}
+#menu ul li{
+  height:71px;
+  width:70px;
+  float:left;
+  margin-left:-5px;
+}
+#menu ul li.bottom{
+  margin-top: 42px;
+}
+#menu ul li.top{
+  margin-top: 7px;
+}
+#menu ul li a{
+  display:block;
+  width:71px;
+  height:71px;
+  z-index:1000000;
+}
+#menu ul li a span{
+  display: none;
+}
+
+#menu ul li a.home{
+  background-image: url(../../images/index/menu.png);
+  background-position: 71px 0;
+}
+#menu ul li a.post{
+  background-image: url(../../images/index/menu.png);
+  background-position: 71px -71px;
+}
+#menu ul li a.about{
+  background-image: url(../../images/index/menu.png);
+  background-position: 71px -142px;
+}
+#menu ul li a.comment{
+  background-image: url(../../images/index/menu.png);
+  background-position: 71px -213px;
+}
+
+#menu ul li a.home:hover{
+  background-image: url(../../images/index/menu.png);
+  background-position: 0 0;
+}
+#menu ul li a.post:hover{
+  background-image: url(../../images/index/menu.png);
+  background-position: 0 -71px;
+}
+#menu ul li a.about:hover{
+  background-image: url(../../images/index/menu.png);
+  background-position: 0 -142px;
+}
+#menu ul li a.comment:hover{
+  background-image: url(../../images/index/menu.png);
+  background-position: 0 -213px;
+}
+
+#sidebar .sidebar_below .s_icon .s_qq:hover{
+  background-image: url(../../images/index/qqs.png);
+  background-position: 0 0;
+}
+#sidebar .sidebar_below .s_icon .s_gmail:hover{
+  background-image: url(../../images/index/gmails.png);
+  background-position: 0 0;
+}
+#sidebar .sidebar_below .s_icon .s_weibo:hover{
+  background-image: url(../../images/index/weibos.png);
+  background-position: 0 0;
+}
