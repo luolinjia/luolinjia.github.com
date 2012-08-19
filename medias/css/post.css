@@ -1,0 +1,274 @@
+@import url(http://fonts.googleapis.com/css?family=Galdeano);
+@import url(http://fonts.googleapis.com/css?family=Acme);
+*{padding:0;margin: 0;border:none;outline:none;}
+html{
+
+}
+body{font-size:14px;
+     font-family:"Galdeano","Hiragino Sans GB","Microsoft YaHei",Trebuchet,"Trebuchet MS",Tahoma,"Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+     color:#000000;
+     background-color: #f8f8f8;}
+body{
+  margin:0 auto;
+  padding:0;
+}
+
+li{
+  list-style-type:none;
+}
+p {
+font-size:15px;
+line-height:30px;
+color:#1a1a1a;
+margin:0 0 15px;
+}
+
+/*******************************header*****************************/
+#wrap{
+  min-width: 100%;
+  min-height: 100%;
+  padding:0px;
+  margin: 0 auto;
+}
+#header{
+  width: 100%;
+  height: 153px;
+  z-index: 9999998;
+}
+#menu{
+  float: right;
+  width:300px;
+  height:120px;
+  margin-right:51px;
+  margin-top:27px;
+  z-index: 99999999;
+}
+#menu ul li{
+  height:71px;
+  width:70px;
+  float:left;
+  margin-left:-5px;
+}
+#menu ul li.bottom{
+  margin-top: 42px;
+}
+#menu ul li.top{
+  margin-top: 7px;
+}
+#menu ul li a{
+  display:block;
+  width:71px;
+  height:71px;
+  -webkit-transform: scale(1);
+  -webkit-transition-timing-function:ease-in-out;
+  -webkit-transition-duration:200ms;
+  -webkit-backface-visibility:visible;
+  -webkit-perspective:0;
+  -webkit-border-radius:2px;
+  -moz-transition-timing-function:ease-in-out;
+  -moz-transition-duration:200ms;
+  -moz-border-radius:2px;
+  z-index:1000000;
+}
+#menu ul li a span{
+  display: none;
+}
+#menu ul li a:hover{
+  -webkit-transform:scale(1.1) rotate(-15deg);
+  -moz-transform:scale(1.1) rotate(-15deg);
+}
+
+
+/*******************************sider*****************************/
+#sidebar{
+  float: left;
+  height:417px;
+  width: 370px;
+  margin-left:50px;
+  margin-top:0;
+  z-index:9999997;
+}
+#sidebar .introduce{
+  height:110px;
+  width:368px;
+  1background-image: url(../img/index/post.png);
+}
+#sidebar .summary{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Tahoma,Verdana,sans-serif;
+  color:#979ca3;
+}
+#sidebar .summary span{
+  color:#2fadca;
+}
+
+
+#sidebar .sidebar_below{
+  width: 363px;
+  height:30px;
+  display:block;
+  1border-top: 1.5px dashed #d5d8dd;
+  padding-top:10px;
+  margin-top:10px;
+}
+#sidebar .sidebar_below .s_icon{
+  width:200px;
+  height: 30px;
+  margin-top:40px;
+  margin-left: 90px;
+}
+#sidebar .sidebar_below ul li a{
+  width:30px;
+  height:30px;
+  display:block;
+}
+#sidebar .sidebar_below .s_icon li{
+  width:30px;
+  height:30px;
+  float: left;
+  margin-right: 10px;
+  padding-right: 10px;
+  display: inline;
+}
+#sidebar .sidebar_below .s_icon .s_qq{
+  background-image: url(../img/index/qqs.png);
+  background-position: 30px 0;
+}
+#sidebar .sidebar_below .s_icon .s_qq span{
+  background-image: url(../img/index/qqs.png);
+  background-position: 0 0;
+}
+#sidebar .sidebar_below .s_icon .s_gmail{
+  background-image: url(../img/index/gmails.png);
+  background-position: 30px 0;
+}
+#sidebar .sidebar_below .s_icon .s_gmail span{
+  background-image: url(../img/index/gmails.png);
+  background-position: 0 0;
+}
+#sidebar .sidebar_below .s_icon .s_weibo{
+  background-image: url(../img/index/weibos.png);
+  background-position: 30px 0;
+}
+#sidebar .sidebar_below .s_icon .s_weibo span{
+  background-image: url(../img/index/weibos.png);
+  background-position: 0 0;
+}
+#sidebar .sidebar_below ul li a span{
+  height: 30px;
+  width: 30px;
+  display:block;
+  opacity: 0;
+  filter: Alpha(Opacity=0);
+  -webkit-transition: opacity .4s ease-in;
+  -moz-transition: opacity .4s ease-in;
+  -o-transition: opacity .4s ease-in;
+  transition: opacity .4s ease-in;
+}
+#sidebar .sidebar_below ul li a span:hover{
+  opacity: 1;
+  filter: Alpha(Opacity=1);
+  cursor: pointer;
+}
+#sidebar .sidebar_below ul li a span span{
+  display:none;
+}
+#sidebar #functions{
+  margin-top: 20px;
+  padding-top:20px;
+  border-top: 1.5px dashed #d5d8dd;
+}
+#sidebar #functions ul li{
+  width:100px;
+  height:30px;
+  float: left;
+  margin-right: 5px;
+  padding-right: 10px;
+  display: inline;
+}
+#sidebar #functions ul li a{
+  font-family: Tahoma,Verdana,sans-serif;
+  font-size:20px;
+  text-decoration: none;
+  font-weight:bold;
+}
+#sidebar #functions ul li a:hover{
+  border-bottom: 1px dashed #018aaa;
+}
+
+/*******************************content*****************************/
+.centercontent{
+  float: left;
+  width: 600px;
+  margin: 3em 0;
+  display: block;
+  padding: 0 2em;
+  1background-color: blue;
+}
+.centercontent a{color:#018aaa;text-decoration:none;}
+.centercontent a:hover{color:#05a1c5;border-bottom:1px dashed #018aaa;}
+.centercontent .title{
+  width: 100%;
+  height: 40px;
+  color:#018aaa;
+  font-size: 30px;
+  font-weight: bold;
+}
+.centercontent .pad{
+  1background-color: green;
+  width:100%;
+  font-size: 16px;
+  line-height:24px;
+}
+.centercontent .pad h1{
+  padding:0.5em 0;
+}
+.centercontent .pad img{
+  max-width: 600px;
+  margin:4px auto;
+  -webkit-box-shadow:-1px -1px 40px #5CA2BE;
+  -moz-box-shadow:-1px -1px 40px #5CA2BE;
+  box-shadow:-1px -1px 40px #5CA2BE;
+}
+
+.listing{
+  font-family: 'Acme', sans-serif;
+}
+.listing-item,.listing-seperator{list-style-type:none;}
+.listing-item a{padding:.2em 1em;}
+.listing-item time{color:#768185;padding-left:2em;}
+.listing-seperator{font-weight:bold; color:#3f4142;}
+.listing-item-a,.listing-seperator{
+  font-family:"Galdeano","Hiragino Sans GB","Microsoft YaHei",Trebuchet,"Trebuchet MS",Tahoma,"Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+}
+pre code{margin:1em 0;font-size:13px;line-height:1.6;display:block;overflow:auto;}
+blockquote{display:block;text-align:justify;border-left:4px solid #eeeeee;}
+blockquote{margin:1em 0em;padding-left:1.5em;}
+blockquote p{margin:0;padding:.5em 0;}
+code{background-color:#b5dbff;}
+#posttime span{
+  font-family: 'Acme', sans-serif;
+  padding-left:30px;
+}
+.meta{font-size:12px;}
+
+
+/*******************************copyright*****************************/
+#footer{
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  font-family: Tahoma;
+  color: #71767C;
+}
+#footer a{
+  text-decoration: none;
+  color: #2fadca;
+  font-weight: bold;
+}
+#footer a:hover{
+  1text-decoration: blink;
+  border-bottom: 1px dashed #2fadca;
+}
+
