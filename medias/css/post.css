@@ -266,6 +266,10 @@ code{background-color:#b5dbff;}
 }
 .meta{font-size:12px;}
 #tag_cloud a{color:#c0edf7;}
+h1{font-family:"Cuprum","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1.6em;color:#000;}
+h2{font-family:"Cuprum","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1.4em;color:#111;}
+h3{font-family:"Cuprum","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1.2em;color:#222;}
+h4{font-family:"Cuprum","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1em;color:#333;}
 
 /*******************************copyright*****************************/
 #footer{
