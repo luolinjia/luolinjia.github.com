@@ -231,6 +231,11 @@ margin:0 0 15px;
   -moz-box-shadow:-1px -1px 40px #5CA2BE;
   box-shadow:-1px -1px 40px #5CA2BE;
 }
+.centercontent .content_post{
+  li{padding:.2em 0;}
+  ol,ul{list-style-position:inside;}
+  ol ul, ul ol, ul ul, ol ol {margin-left:1em;}
+}
 
 .listing{
   font-family: 'Acme', sans-serif;
