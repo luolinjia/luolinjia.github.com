@@ -232,6 +232,7 @@ margin:0 0 15px;
   box-shadow:-1px -1px 40px #5CA2BE;
 }
 .centercontent .content_post li{
+  font-size:14px;
   list-style-type:disc;
   padding:.2em 0;
 }
