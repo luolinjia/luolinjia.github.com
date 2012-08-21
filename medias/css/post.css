@@ -218,7 +218,7 @@ margin:0 0 15px;
 .centercontent .pad{
   1background-color: green;
   width:100%;
-  font-size: 16px;
+  font-size: 14px;
   line-height:24px;
 }
 .centercontent .pad h1{
@@ -232,7 +232,6 @@ margin:0 0 15px;
   box-shadow:-1px -1px 40px #5CA2BE;
 }
 .centercontent .content_post li{
-  font-size:14px;
   list-style-type:disc;
   padding:.2em 0;
 }
