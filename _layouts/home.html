@@ -1,84 +1,52 @@
 ﻿<!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="google-site-verification" content="i649wSJcQRNrdHFWPCGvw10oiV4nAzfbpX30URwKRHg" />
-  <title>Linjia Luo | 骆林佳</title>
-  <meta name="author" content="Linjia Luo | 骆林佳"/>
-  <meta name="keywords" content="portfolio, luolinjia, web design, web developer, graphic design, css3, html5, css, html, jquery, Shanghai, tauranga, wintec, design, identity, publication, web, logo, interactive" />
-  <!--[if IE]>
-  <style type="text/css">
-      @import "/media/css/newhomeie.css";
-  </style>
-  <![endif]-->
-  <link rel="stylesheet" type="text/css" href="/media/css/newhome.css">
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="i649wSJcQRNrdHFWPCGvw10oiV4nAzfbpX30URwKRHg" />
+    <title>Linjia Luo | 骆林佳</title>
+    <meta name="author" content="Linjia Luo | 骆林佳"/>
+    <meta name="keywords" content="portfolio, luolinjia, web design, web developer, graphic design, css3, html5, css, html, jquery, Shanghai, tauranga, wintec, design, identity, publication, web, logo, interactive" />
 
-  <script type="text/javascript" src="/media/js/jquery.min.js"></script>
-  <script type="text/javascript" src="/media/js/jquery.path.js"></script>
-  <script type="text/javascript" src="/media/js/info.js"></script>
+    <link rel="stylesheet" href="../medias/css/base.css"/>
+    <link rel="stylesheet" href="../medias/css/home.css"/>
+
+    <script type="text/javascript" src="../medias/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../medias/js/homeAnimate.js"></script>
 
 </head>
 <body>
-    <!-- canvas -->
-    <div id="canvas">
-    <script type="text/javascript" src="/media/js/protoclass.js"></script>
-    <script type="text/javascript" src="/media/js/box2d.js"></script>
-    <script type="text/javascript" src="/media/js/main.js"></script>
-    </div>
     <!-- wrap start -->
     <div id="wrap">
         <!-- header start -->
         <div id="header">
-            <div id="menu">
-                <ul>
-                    <li class="bottom"><a class="home" href="http://ideex.name" title="HOME"><span>HOME</span></a></li>
-                    <li class="top"><a class="post" href="http://ideex.name/cn" title="POST"><span>POST</span></a></li>
-                    <li class="bottom"><a class="about" href="http://ideex.name/cn/about/" title="ABOUT"><span>ABOUT</span></a></li>
-                    <li class="top"><a class="comment" href="http://ideex.name/cn/comment/" title="COMMENTS"><span>COMMENTS</span></a></li>
-                </ul>
-            </div>
+
         </div>
         <!-- header end -->
-        <!-- sidebar start -->
-        <div id="sidebar">
-            <img src="../images/index/introduce.png" height="369px" width="369px" alt="linjia.luo" />
-            <div class="sidebar_below">
-                <ul class="s_icon">
-                    <li><a class="s_qq" title="QQ" href="tencent://message/?uin=360512239&Site=ideex.name&Menu=yes"><span><span>qq</span></span></a></li>
-                    <li><a class="s_gmail" title="gmail" href="mailto:ideexto@gmail.com"><span><span>gmail</span></span></a></li>
-                    <li><a class="s_weibo" title="weibo" href="http://t.qq.com/xiao_luove"><span><span>weibo</span></span></a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- sidebar end -->
-        <!-- china start -->
-        <div id="china">
-            <div id="pinpoint">
-                <img src="../images/index/pinpoint.png" width="43px" height="65px" alt="my point" />
-            </div>
-            <div id="resize">
-                <div class="shadow"></div>
-            </div>
-        </div>
-        <!-- china end -->
         <!-- content start -->
-        <div id="content" class="circle">
-            <div id="message"><span id="detailinfo" class="detail_info">
-            <span>Hi friends,</span><br/>
-            Here is my location, Pudong Century Park.<br/>
-            If you really can not help but miss me, please come.
-            </span>
+        <div id="content">
+            <div id="point"></div>
+            <div id="menu">
+                <div id="w-post" class="item" title="post"></div>
+                <div id="w-about" class="item" title="about"></div>
+                <div id="w-tags" class="item" title="tags"></div>
+                <div id="w-none" class="item" title="none"></div>
+                <div class="cb"></div>
+            </div>
+            <div id="word">
+
             </div>
         </div>
         <!-- content end -->
+
         <!-- footer start -->
         <div id="footer">
             <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2011 - {{site.time | date:"%Y"}} by <a href="http://ideex.name">Linjia Luo</a> | <span class="label label-info">{{site.time | date:"%Y-%m-%d %H:%M:%S"}}</span></small></p>
         </div>
         <!-- footer end -->
-        <div id="copyright"></div>
     </div>
     <!-- wrap end -->
+
+
     <script type="text/javascript">
   		var _gaq = _gaq || [];
   		_gaq.push(['_setAccount', 'UA-29874870-1']);
