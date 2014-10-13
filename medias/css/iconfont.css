@@ -1,0 +1,20 @@
+@font-face {font-family: 'ideexmenu';
+    src: url('../iconfont/iconfont.eot'); /* IE9*/
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../iconfont/iconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+    font-family: 'sinanova';
+    src: url('../iconfont/SinaNovaReg-webfont.eot');
+    src: url('../iconfont/SinaNovaReg-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../iconfont/SinaNovaReg-webfont.woff2') format('woff2'),
+    url('../iconfont/SinaNovaReg-webfont.woff') format('woff'),
+    url('../iconfont/SinaNovaReg-webfont.ttf') format('truetype'),
+    url('../iconfont/SinaNovaReg-webfont.svg#sinanova-regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
