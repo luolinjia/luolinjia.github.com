@@ -43,7 +43,7 @@ $(function(){
     $iTags.mouseover(function() {
         var $word = $('#word');
         $word.fadeIn(800, function() {
-            $word.empty().append('他总是跟随在你的不远处，你向前，他也向前，你退后，他也退后，你转身，然后他却不见！');
+            $word.empty().append('他却用温暖的内心感染着身边的每个人');
         });
     }).mouseleave(function() {
         $('#word').fadeOut(300).empty();
