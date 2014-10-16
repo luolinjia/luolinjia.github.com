@@ -6,6 +6,21 @@
 $(function(){
     var $point = $('#point'), $iPost = $('#w-post'), $iAbout = $('#w-about'), $iTags = $('#w-tags'), $iNone = $('#w-none');
 
+    var _ = {
+        showWord: function(obj, word, link){
+            obj.mouseover(function() {
+                var $word = $('#word');
+                $word.fadeIn(800, function() {
+                    $word.empty().append(word);
+                });
+            }).mouseleave(function() {
+                $('#word').fadeOut(300).empty();
+            }).click(function() {
+                window.location = link;
+            });
+        }
+    };
+    
     $point.mouseover(function() {
         $('#w-post').fadeIn(200);
         $('#w-about').fadeIn(600);
@@ -24,18 +39,4 @@ $(function(){
     _.showWord($iTags, '他却用温暖的内心感染着身边的每个人', 'http://ideex.name/tags');
     _.showWord($iNone, '然后，他在你的心中驻留。', 'http://ideex.name');
 
-    var _ = {
-        showWord: function(obj, word, link){
-            obj.mouseover(function() {
-                var $word = $('#word');
-                $word.fadeIn(800, function() {
-                    $word.empty().append(word);
-                });
-            }).mouseleave(function() {
-                $('#word').fadeOut(300).empty();
-            }).click(function() {
-                window.location = link;
-            });
-        }
-    };
 });
