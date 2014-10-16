@@ -35,8 +35,8 @@ $(function(){
     });
 
     _.showWord($iPost, '故事的主角总是善意地提醒周围人恶意的目光', 'http://ideex.name/cn');
-    _.showWord($iAbout, '偶尔，他也总是自欺欺人！', 'http://ideex.name/about');
-    _.showWord($iTags, '他却用温暖的内心感染着身边的每个人', 'http://ideex.name/tags');
+    _.showWord($iAbout, '偶尔，他也总是自欺欺人！', 'http://ideex.name/cn/about');
+    _.showWord($iTags, '他却用温暖的内心感染着身边的每个人', 'http://ideex.name/cn/tags');
     _.showWord($iNone, '然后，他在你的心中驻留。', 'http://ideex.name');
 
 });
