@@ -1,5 +1,6 @@
 /**
  * Created by luolinjia on 10/13/14.
+ * Updated by luolinjia on 10/16/14.
  */
 
 $(function(){
@@ -18,48 +19,23 @@ $(function(){
         $('#word').fadeOut(300).empty();
     });
 
-    $iPost.mouseover(function() {
-        var $word = $('#word');
-        $word.fadeIn(800, function() {
-            $word.empty().append('故事的主角总是善意地提醒周围人恶意的目光');
-        });
-    }).mouseleave(function() {
-        $('#word').fadeOut(300).empty();
-    }).click(function() {
-        window.location = 'http://ideex.name/cn';
-    });
+    _.showWord($iPost, '故事的主角总是善意地提醒周围人恶意的目光', 'http://ideex.name/cn');
+    _.showWord($iAbout, '偶尔，他也总是自欺欺人！', 'http://ideex.name/about');
+    _.showWord($iTags, '他却用温暖的内心感染着身边的每个人', 'http://ideex.name/tags');
+    _.showWord($iNone, '然后，他在你的心中驻留。', 'http://ideex.name');
 
-    $iAbout.mouseover(function() {
-        var $word = $('#word');
-        $word.fadeIn(800, function() {
-            $word.empty().append('偶尔，他也总是自欺欺人！');
-        });
-    }).mouseleave(function() {
-        $('#word').fadeOut(300).empty();
-    }).click(function() {
-        window.location = 'http://ideex.name/cn/about';
-    });
-
-    $iTags.mouseover(function() {
-        var $word = $('#word');
-        $word.fadeIn(800, function() {
-            $word.empty().append('他却用温暖的内心感染着身边的每个人');
-        });
-    }).mouseleave(function() {
-        $('#word').fadeOut(300).empty();
-    }).click(function() {
-        window.location = 'http://ideex.name/cn/tags';
-    });
-
-    $iNone.mouseover(function() {
-        var $word = $('#word');
-        $word.fadeIn(800, function() {
-            $word.empty().append('然后，他在你的心中驻留。');
-        });
-    }).mouseleave(function() {
-        $('#word').fadeOut(300).empty();
-    }).click(function() {
-        window.location = 'http://ideex.name';
-    });
-
+    var _ = {
+        showWord: function(obj, word, link){
+            obj.mouseover(function() {
+                var $word = $('#word');
+                $word.fadeIn(800, function() {
+                    $word.empty().append(word);
+                });
+            }).mouseleave(function() {
+                $('#word').fadeOut(300).empty();
+            }).click(function() {
+                window.location = link;
+            });
+        }
+    };
 });
