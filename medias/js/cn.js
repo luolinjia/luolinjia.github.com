@@ -83,12 +83,14 @@ function showBeautifulWords() {
 
         self.removeClass('logo-in').addClass('logo-out');
         if ($('.logo-word').length <= 0)
-            setTimeout(function(){self.append(wordDom);}, 1000);
+            setTimeout(function(){self.append(wordDom);}, 500);
     }).mouseleave(function () {
-        self.empty();
-        setTimeout(function(){
-            self.empty();
-            self.removeClass('logo-out').addClass('logo-in');
-        }, 1000);
+        self.removeClass('logo-out').addClass('logo-in');
+        var logoWord = $('.logo-word');
+        if (logoWord) {
+            logoWord.fadeOut(50, function () {
+                self.empty();
+            })
+        }
     });
 }
