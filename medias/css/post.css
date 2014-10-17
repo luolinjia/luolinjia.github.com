@@ -91,45 +91,42 @@ p {
     background-color: #127F78;
     z-index: 11;
 }
-
 #logo.logo-in {
     -webkit-transition-property: width, height, background-color, border;
     -moz-transition-property: width, height, background-color, border;
     -ms-transition-property: width, height, background-color, border;
     transition-property: width, height, background-color, border;
 
-    -webkit-transition-duration: .5s, .5s, .5s, .5s;
-    -moz-transition-duration: .5s, .5s, .5s, .5s;
-    -ms-transition-duration: .5s, .5s, .5s, .5s;
-    -o-transition-duration: .5s, .5s, .5s, .5s;
-    transition-duration: .5s, .5s, .5s, .5s;
+    -webkit-transition-duration: .25s, .25s, .25s, .25s;
+    -moz-transition-duration: .25s, .25s, .25s, .25s;
+    -ms-transition-duration: .25s, .25s, .25s, .25s;
+    -o-transition-duration: .25s, .25s, .25s, .25s;
+    transition-duration: .25s, .25s, .25s, .25s;
 
-    -webkit-transition-delay: 0, .5s, .75s, .75s;
-    -moz-transition-delay: 0, .5s, .75s, .75s;
-    -ms-transition-delay: 0, .5s, .75s, .75s;
-    -o-transition-delay: 0, .5s, .75s, .75s;
-    transition-delay: 0, .5s, .75s, .75s;
+    -webkit-transition-delay: 0, .25s, .5s, .5s;
+    -moz-transition-delay: 0, .25s, .5s, .5s;
+    -ms-transition-delay: 0, .25s, .5s, .5s;
+    -o-transition-delay: 0, .25s, .5s, .5s;
+    transition-delay: 0, .25s, .5s, .5s;
 }
-
 #logo.logo-out {
     -webkit-transition-property: border, background-color, height, width;
     -moz-transition-property: border, background-color, height, width;
     -ms-transition-property: border, background-color, height, width;
     transition-property: border, background-color, height, width;
 
-    -webkit-transition-duration: .5s, .5s, .5s, .5s;
-    -moz-transition-duration: .5s, .5s, .5s, .5s;
-    -ms-transition-duration: .5s, .5s, .5s, .5s;
-    -o-transition-duration: .5s, .5s, .5s, .5s;
-    transition-duration: .5s, .5s, .5s, .5s;
+    -webkit-transition-duration: .25s, .25s, .25s, .25s;
+    -moz-transition-duration: .25s, .25s, .25s, .25s;
+    -ms-transition-duration: .25s, .25s, .25s, .25s;
+    -o-transition-duration: .25s, .25s, .25s, .25s;
+    transition-duration: .25s, .25s, .25s, .25s;
 
-    -webkit-transition-delay: .25s, .25s, .25s, .75s;
-    -moz-transition-delay: .25s, .25s, .25s, .75s;
-    -ms-transition-delay: .25s, .25s, .25s, .75s;
-    -o-transition-delay: .25s, .25s, .25s, .75s;
-    transition-delay: .25s, .25s, .25s, .75s;
+    -webkit-transition-delay: .25s, .25s, .25s, .5s;
+    -moz-transition-delay: .25s, .25s, .25s, .5s;
+    -ms-transition-delay: .25s, .25s, .25s, .5s;
+    -o-transition-delay: .25s, .25s, .25s, .5s;
+    transition-delay: .25s, .25s, .25s, .5s;
 }
-
 #logo:hover {
     width: 200px;
     background-color: #f8f8f8;
