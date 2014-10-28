@@ -77,8 +77,8 @@ function myScroll() {
 function showBeautifulWords() {
 
     var self = $('#logo');
-    self.addClass('logo-in');
-    self.mouseover(function () {
+    self.addClass('logo-in')
+        .mouseover(function () {
         var ranWord = Math.floor(Math.random() * allWords.length), wordDom = '<div class="logo-word"><div class="logo-title">' + allWords[ranWord]['title'] + '</div><div class="logo-content"><span></span>' + allWords[ranWord]['content'] + '</div><div class="logo-author">' + allWords[ranWord]['author'] + '</div></div>';
 
         self.removeClass('logo-in').addClass('logo-out');
