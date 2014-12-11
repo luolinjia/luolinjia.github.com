@@ -1,42 +1,69 @@
 /**
  * Created by luolinjia on 10/13/14.
  * Updated by luolinjia on 10/16/14.
+ * Updated by luolinjia on 12/11/14.
  */
 
 $(function(){
-    var $point = $('#point'), $iPost = $('#w-post'), $iAbout = $('#w-about'), $iTags = $('#w-tags'), $iNone = $('#w-none');
+    var point = $('#point'), iPost = $('#w-post'), iAbout = $('#w-about'), iTags = $('#w-tags'), iNone = $('#w-none'), word = $('#word');
 
     var _ = {
-        showWord: function(obj, word, link){
-            var $word = $('#word');
+        showWord: function(obj, link){
             obj.mouseover(function() {
-                $word.fadeIn(800, function() {
-                    $word.empty().append(word);
-                });
-            }).mouseleave(function() {
-                $word.fadeOut(100).empty();
+                var thiz = $(this), imgs = $('img', $('#imgs')),
+                    relatedNo = thiz.attr('data-no');
+                _.switchPic(relatedNo, imgs);
+            }).mouseleave(function () {
+                word.empty();
             }).click(function() {
                 window.location = link;
             });
+        }, switchPic: function (n, os) {
+            os.hide();
+            for (var i = 0, size = os.length; i < size; i++) {
+                var item = $(os[i]);
+                if (n === item.attr('src')) {
+                    item.fadeIn(300);
+                }
+            }
+            word.css('top', '');
+            switch (n) {
+                case '../medias/img/01.jpg': {
+                    word.append($('<img/>', {'src': '../medias/img/1_story.png'}));
+                } break;
+                case '../medias/img/02.jpg': {
+                    word.append($('<img/>', {'src': '../medias/img/2_actor.png'}));
+                } break;
+                case '../medias/img/03.jpg': {
+                    word.append($('<img/>', {'src': '../medias/img/3_cheat.png'}));
+                } break;
+                case '../medias/img/04.jpg': {
+                    word.append($('<img/>', {'src': '../medias/img/4_heart.png'}));
+                } break;
+                case '../medias/img/05.jpg': {
+                    word.append($('<img/>', {'src': '../medias/img/5_start.png'}))
+                        .css({'top':'500px'});
+                } break;
+                default: break;
+            }
+
         }
     };
-    
-    $point.mouseover(function() {
+
+    point.mouseover(function() {
         $('#w-post').fadeIn(200);
         $('#w-about').fadeIn(600);
         $('#w-tags').fadeIn(1000);
         $('#w-none').fadeIn(1400);
-        $('#word').fadeIn(300, function() {
-            $(this).empty().append('当你驻足这里，便是故事！');
-        });
-
+        _.switchPic($(this).attr('data-no'), $('img', $('#imgs')));
     }).mouseleave(function () {
-        $('#word').fadeOut(300).empty();
+        word.empty();
     });
 
-    _.showWord($iPost, '故事的主角总是善意地提醒周围人恶意的目光', 'http://ideex.name/cn');
-    _.showWord($iAbout, '偶尔，他也总是自欺欺人！', 'http://ideex.name/cn/about');
-    _.showWord($iTags, '他却用温暖的内心感染着身边的每个人', 'http://ideex.name/cn/tags');
-    _.showWord($iNone, '然后，他在你的心中驻留。', 'http://ideex.name');
+    _.showWord(iPost, 'http://ideex.name/cn');
+    _.showWord(iAbout, 'http://ideex.name/cn/about');
+    _.showWord(iTags, 'http://ideex.name/cn/tags');
+    _.showWord(iNone, 'http://ideex.name');
 
+    $('img').hide();
 });

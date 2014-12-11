@@ -15,25 +15,18 @@
 
 </head>
 <body>
+
     <!-- wrap start -->
     <div id="wrap">
-        <!-- header start -->
-        <div id="header">
-
-        </div>
-        <!-- header end -->
         <!-- content start -->
         <div id="content">
-            <div id="point"></div>
+            <div id="point" data-no="../medias/img/01.jpg"></div>
             <div id="menu">
-                <div id="w-post" class="item" title="post"></div>
-                <div id="w-about" class="item" title="about"></div>
-                <div id="w-tags" class="item" title="tags"></div>
-                <div id="w-none" class="item" title="none"></div>
+                <div id="w-post" class="item" title="post" data-no="../medias/img/02.jpg"></div>
+                <div id="w-about" class="item" title="about" data-no="../medias/img/03.jpg"></div>
+                <div id="w-tags" class="item" title="tags" data-no="../medias/img/04.jpg"></div>
+                <div id="w-none" class="item" title="none" data-no="../medias/img/05.jpg"></div>
                 <div class="cb"></div>
-            </div>
-            <div id="word">
-
             </div>
         </div>
         <!-- content end -->
@@ -45,18 +38,31 @@
         <!-- footer end -->
     </div>
     <!-- wrap end -->
-
-
+    
+    <!-- images start -->
+    <div id="imgBox">
+        <div id="imgs">
+            <img src="../medias/img/01.jpg"/>
+            <img src="../medias/img/02.jpg"/>
+            <img src="../medias/img/03.jpg"/>
+            <img src="../medias/img/04.jpg"/>
+            <img src="../medias/img/05.jpg"/>
+        </div>
+        <div id="word"></div>
+    </div>
+    <!-- images end -->
+    
+    <!-- NOTE: if you fork this template, please EDIT to change the google account to your accout or DEL the code -->
     <script type="text/javascript">
-  		var _gaq = _gaq || [];
-  		_gaq.push(['_setAccount', 'UA-29874870-1']);
-  		_gaq.push(['_trackPageview']);
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-29874870-1']);
+        _gaq.push(['_trackPageview']);
 
-  		(function() {
-    		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    		ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-    		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  		})();
-	</script>
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </body>
 </html>
