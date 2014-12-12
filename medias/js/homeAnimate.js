@@ -5,7 +5,7 @@
  */
 
 $(function(){
-    var point = $('#point'), iPost = $('#w-post'), iAbout = $('#w-about'), iTags = $('#w-tags'), iEn = $('#w-none'), word = $('#word');
+    var point = $('#point'), iPost = $('#w-post'), iAbout = $('#w-about'), iTags = $('#w-tags'), iEn = $('#w-en'), word = $('#word');
 
     var _ = {
         showWord: function(obj, link){
