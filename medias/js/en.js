@@ -35,7 +35,7 @@ var currentScroll = 0,
     }, {
         'id': 7,
         'title': '',
-        'content': 'You have to believe in yourself. That's the secret of success. ',
+        'content': 'You have to believe in yourself. That\'s the secret of success. ',
         'author': 'Charles Chaplin'
     }];
 
