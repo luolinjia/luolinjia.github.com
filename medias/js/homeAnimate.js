@@ -5,7 +5,7 @@
  */
 
 $(function(){
-    var point = $('#point'), iPost = $('#w-post'), iAbout = $('#w-about'), iTags = $('#w-tags'), iNone = $('#w-none'), word = $('#word');
+    var point = $('#point'), iPost = $('#w-post'), iAbout = $('#w-about'), iTags = $('#w-tags'), iEn = $('#w-none'), word = $('#word');
 
     var _ = {
         showWord: function(obj, link){
@@ -51,10 +51,10 @@ $(function(){
     };
 
     point.mouseover(function() {
-        $('#w-post').fadeIn(200);
-        $('#w-about').fadeIn(600);
-        $('#w-tags').fadeIn(1000);
-        $('#w-none').fadeIn(1400);
+        iPost.fadeIn(200);
+        iAbout.fadeIn(600);
+        iTags.fadeIn(1000);
+        iEn.fadeIn(1400);
         _.switchPic($(this).attr('data-no'), $('img', $('#imgs')));
     }).mouseleave(function () {
         word.empty();
@@ -63,7 +63,7 @@ $(function(){
     _.showWord(iPost, 'http://ideex.name/cn');
     _.showWord(iAbout, 'http://ideex.name/cn/about');
     _.showWord(iTags, 'http://ideex.name/cn/tags');
-    _.showWord(iNone, 'http://ideex.name');
+    _.showWord(iEn, 'http://ideex.name/en');
 
     $('img').hide();
 });
