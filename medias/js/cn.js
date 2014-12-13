@@ -64,40 +64,41 @@ var currentScroll = 0,
                     })
                 }
             });
-        },
-        myScroll: function () {
-            var nextScroll = $(this).scrollTop(), $header = $('#header');
-//            console.log('scrollPosition' + $(document).scrollTop() + 'currentScroll: => ' + currentScroll + '  nextScroll: => ' + nextScroll);
-            if (nextScroll > currentScroll){
-                $header.removeClass('in bgColor').addClass('out');
-                if (nextScroll >= $(document).height()-$(window).height()){
-                    $header.removeClass('out').addClass('in bgColor');
-                }
-                if ($(document).scrollTop() <= 0) {
-                    $header.removeClass('out').addClass('in');
-                    $header.removeClass('bgColor');
-                }
-            } else {
-                $header.removeClass('out').addClass('in bgColor');
-                if ($(window).scrollTop() >= 0 && $(window).scrollTop() <= 100) {
-                    $header.removeClass('bgColor');
-                }
-            }
-        
-            if ($(window).width() >= 1000) {
-                $header.removeClass('bgColor');
-            }
-        
-            //Updates current scroll position
-            currentScroll = nextScroll;
         }
     };
 
 $(function(){
     $(window).scroll(function(){
-        _.myScroll();
+        myScroll();
     });
 
     _.bindHoverBeautifulWords();
     _.bindToggle();
 });
+
+function myScroll() {
+    var nextScroll = $(this).scrollTop(), $header = $('#header');
+//            console.log('scrollPosition' + $(document).scrollTop() + 'currentScroll: => ' + currentScroll + '  nextScroll: => ' + nextScroll);
+    if (nextScroll > currentScroll){
+        $header.removeClass('in bgColor').addClass('out');
+        if (nextScroll >= $(document).height()-$(window).height()){
+            $header.removeClass('out').addClass('in bgColor');
+        }
+        if ($(document).scrollTop() <= 0) {
+            $header.removeClass('out').addClass('in');
+            $header.removeClass('bgColor');
+        }
+    } else {
+        $header.removeClass('out').addClass('in bgColor');
+        if ($(window).scrollTop() >= 0 && $(window).scrollTop() <= 100) {
+            $header.removeClass('bgColor');
+        }
+    }
+
+    if ($(window).width() >= 1000) {
+        $header.removeClass('bgColor');
+    }
+
+    //Updates current scroll position
+    currentScroll = nextScroll;
+}
