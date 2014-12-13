@@ -1,5 +1,6 @@
 /**
- * Created by luolinj on 10/14/2014.
+ * Created by luolinjia on 10/14/2014.
+ * Updated by luolinjia on 12/13/2014. -- Add the show/hide function in the post list.
  */
 var currentScroll = 0,
     allWords = [{
@@ -37,60 +38,66 @@ var currentScroll = 0,
         'title': '',
         'content': '黑发不知勤学早，白首方悔读书迟。',
         'author': '《劝学》'
-    }];
+    }],
+    _ = {
+        bindToggle: function () {
+            $('.listing-seperator').click(function(){
+                var year = $(this).attr('data-flag');
+                $('.list_' + year).toggle(200);
+            });
+        },
+        bindHoverBeautifulWords: function() {
+            var self = $('#logo');
+            self.addClass('logo-in')
+                .mouseover(function () {
+                var ranWord = Math.floor(Math.random() * allWords.length), wordDom = '<div class="logo-word"><div class="logo-title">' + allWords[ranWord]['title'] + '</div><div class="logo-content"><span></span>' + allWords[ranWord]['content'] + '</div><div class="logo-author">' + allWords[ranWord]['author'] + '</div></div>';
+        
+                self.removeClass('logo-in').addClass('logo-out');
+                if ($('.logo-word').length <= 0)
+                    setTimeout(function(){self.append(wordDom);}, 500);
+            }).mouseleave(function () {
+                self.removeClass('logo-out').addClass('logo-in');
+                var logoWord = $('.logo-word');
+                if (logoWord) {
+                    logoWord.fadeOut(50, function () {
+                        self.empty();
+                    })
+                }
+            });
+        },
+        myScroll: function () {
+            var nextScroll = $(this).scrollTop(), $header = $('#header');
+//            console.log('scrollPosition' + $(document).scrollTop() + 'currentScroll: => ' + currentScroll + '  nextScroll: => ' + nextScroll);
+            if (nextScroll > currentScroll){
+                $header.removeClass('in bgColor').addClass('out');
+                if (nextScroll >= $(document).height()-$(window).height()){
+                    $header.removeClass('out').addClass('in bgColor');
+                }
+                if ($(document).scrollTop() <= 0) {
+                    $header.removeClass('out').addClass('in');
+                    $header.removeClass('bgColor');
+                }
+            } else {
+                $header.removeClass('out').addClass('in bgColor');
+                if ($(window).scrollTop() >= 0 && $(window).scrollTop() <= 100) {
+                    $header.removeClass('bgColor');
+                }
+            }
+        
+            if ($(window).width() >= 1000) {
+                $header.removeClass('bgColor');
+            }
+        
+            //Updates current scroll position
+            currentScroll = nextScroll;
+        }
+    };
 
 $(function(){
     $(window).scroll(function(){
-        myScroll();
+        _.myScroll();
     });
 
-    showBeautifulWords();
+    _.bindHoverBeautifulWords();
+    _.bindToggle();
 });
-
-function myScroll() {
-    var nextScroll = $(this).scrollTop(), $header = $('#header');
-//            console.log('scrollPosition' + $(document).scrollTop() + 'currentScroll: => ' + currentScroll + '  nextScroll: => ' + nextScroll);
-    if (nextScroll > currentScroll){
-        $header.removeClass('in bgColor').addClass('out');
-        if (nextScroll >= $(document).height()-$(window).height()){
-            $header.removeClass('out').addClass('in bgColor');
-        }
-        if ($(document).scrollTop() <= 0) {
-            $header.removeClass('out').addClass('in');
-            $header.removeClass('bgColor');
-        }
-    } else {
-        $header.removeClass('out').addClass('in bgColor');
-        if ($(window).scrollTop() >= 0 && $(window).scrollTop() <= 100) {
-            $header.removeClass('bgColor');
-        }
-    }
-
-    if ($(window).width() >= 1000) {
-        $header.removeClass('bgColor');
-    }
-
-    //Updates current scroll position
-    currentScroll = nextScroll;
-}
-
-function showBeautifulWords() {
-
-    var self = $('#logo');
-    self.addClass('logo-in')
-        .mouseover(function () {
-        var ranWord = Math.floor(Math.random() * allWords.length), wordDom = '<div class="logo-word"><div class="logo-title">' + allWords[ranWord]['title'] + '</div><div class="logo-content"><span></span>' + allWords[ranWord]['content'] + '</div><div class="logo-author">' + allWords[ranWord]['author'] + '</div></div>';
-
-        self.removeClass('logo-in').addClass('logo-out');
-        if ($('.logo-word').length <= 0)
-            setTimeout(function(){self.append(wordDom);}, 500);
-    }).mouseleave(function () {
-        self.removeClass('logo-out').addClass('logo-in');
-        var logoWord = $('.logo-word');
-        if (logoWord) {
-            logoWord.fadeOut(50, function () {
-                self.empty();
-            })
-        }
-    });
-}
