@@ -37,14 +37,41 @@ var currentScroll = 0,
         'title': '',
         'content': 'You have to believe in yourself. That\'s the secret of success. ',
         'author': 'Charles Chaplin'
-    }];
+    }],
+    _ = {
+        bindToggle: function () {
+            $('.listing-seperator').click(function(){
+                var year = $(this).attr('data-flag');
+                $('.list_' + year).toggle(200);
+            });
+        },
+        bindShowBeautifulWords: function() {
+            var self = $('#logo');
+            self.addClass('logo-in')
+                .mouseover(function () {
+                var ranWord = Math.floor(Math.random() * allWords.length), wordDom = '<div class="logo-word"><div class="logo-title">' + allWords[ranWord]['title'] + '</div><div class="logo-content"><span></span>' + allWords[ranWord]['content'] + '</div><div class="logo-author">' + allWords[ranWord]['author'] + '</div></div>';
+                self.removeClass('logo-in').addClass('logo-out');
+                if ($('.logo-word').length <= 0)
+                    setTimeout(function(){self.append(wordDom);}, 500);
+            }).mouseleave(function () {
+                self.removeClass('logo-out').addClass('logo-in');
+                var logoWord = $('.logo-word');
+                if (logoWord) {
+                    logoWord.fadeOut(50, function () {
+                        self.empty();
+                    })
+                }
+            });
+        }
+    };
 
 $(function(){
     $(window).scroll(function(){
         myScroll();
     });
 
-    showBeautifulWords();
+    _.bindShowBeautifulWords();
+    _.bindToggle();
 });
 
 function myScroll() {
@@ -72,25 +99,4 @@ function myScroll() {
 
     //Updates current scroll position
     currentScroll = nextScroll;
-}
-
-function showBeautifulWords() {
-
-    var self = $('#logo');
-    self.addClass('logo-in')
-        .mouseover(function () {
-        var ranWord = Math.floor(Math.random() * allWords.length), wordDom = '<div class="logo-word"><div class="logo-title">' + allWords[ranWord]['title'] + '</div><div class="logo-content"><span></span>' + allWords[ranWord]['content'] + '</div><div class="logo-author">' + allWords[ranWord]['author'] + '</div></div>';
-
-        self.removeClass('logo-in').addClass('logo-out');
-        if ($('.logo-word').length <= 0)
-            setTimeout(function(){self.append(wordDom);}, 500);
-    }).mouseleave(function () {
-        self.removeClass('logo-out').addClass('logo-in');
-        var logoWord = $('.logo-word');
-        if (logoWord) {
-            logoWord.fadeOut(50, function () {
-                self.empty();
-            })
-        }
-    });
 }
