@@ -287,6 +287,7 @@ p {
     height: 20px;
     background-color: #127F78;
     margin-right: 10px;
+    cursor: pointer;
 }
 .listing {
 
