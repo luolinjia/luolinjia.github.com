@@ -1,3 +1,20 @@
+@-webkit-keyframes chgcolor {
+    0% { background-color: rgb(18, 127, 120); width: 20px; }
+    100% { background-color: rgba(35, 159, 240, 0.50); width: 40px; }
+}
+@-moz-keyframes chgcolor {
+    0% { background-color: rgb(18, 127, 120); width: 20px; }
+    100% { background-color: rgba(35, 159, 240, 0.50); width: 40px; }
+}
+@-o-keyframes chgcolor {
+    0% { background-color: rgb(18, 127, 120); width: 20px; }
+    100% { background-color: rgba(35, 159, 240, 0.50); width: 40px; }
+}
+@keyframes chgcolor {
+    0% { background-color: rgb(18, 127, 120); width: 20px; }
+    100% { background-color: rgba(35, 159, 240, 0.50); width: 40px; }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -289,7 +306,31 @@ p {
     margin-right: 10px;
     cursor: pointer;
 }
-.listing {
+.listing .listing-logo:hover {
+
+    animation-name:chgcolor;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+
+    -moz-animation-name:chgcolor;
+    -moz-animation-duration:1s;
+    -moz-animation-timing-function:linear;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:alternate;
+
+    -webkit-animation-name:chgcolor;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:alternate;
+
+    -o-animation-name:chgcolor;
+    -o-animation-duration:1s;
+    -o-animation-timing-function:linear;
+    -o-animation-iteration-count:infinite;
+    -o-animation-direction:alternate;
 
 }
 .listing-item, .listing-seperator {
