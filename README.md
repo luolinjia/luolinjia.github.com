@@ -1,10 +1,10 @@
 ideex
 ==
 
-if (FORK) {  
-    PLEASE **DEL** the related **google analytics** Script   
+    if (FORK) {  
+        PLEASE **DEL** the related **google analytics** Script   
     
-    AND  
+        AND  
     
-    the disqus comment Script!   
-}
+        the disqus comment Script!   
+    }
