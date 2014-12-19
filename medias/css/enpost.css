@@ -30,9 +30,13 @@ body {
     padding: 0;
 }
 
-li {
-    margin-left: 1.4em;
+.post li {
     font-size: 18px;
+}
+
+.post .listing li {
+    margin-left: 1.4em;
+    font-size: 16px;
 }
 
 p {
