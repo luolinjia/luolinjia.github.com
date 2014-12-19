@@ -32,6 +32,7 @@ body {
 
 li {
     margin-left: 1.4em;
+    font-size: 18px;
 }
 
 p {
@@ -264,7 +265,7 @@ p {
 
 .center-content .pad {
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
 }
 
