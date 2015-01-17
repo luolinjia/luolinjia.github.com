@@ -41,11 +41,13 @@
     }
 }
 
-/*------------------------wrapper---------------------------*/
 body {
-    margin: 0;
+	font-family: "sinanova", "PMingLiu", "Microsoft YaHei", sans-serif;
+	margin: 0;
     padding: 0;
 }
+
+/*------------------------wrapper---------------------------*/
 #wrap {
     margin: 0 auto;
     margin-top: 100px;
@@ -127,7 +129,27 @@ body {
     cursor: pointer;
 }
 
-
+/*------------------------device---------------------------*/
+#device {
+	margin: 20px;
+	text-align: center;
+	line-height: 50px;
+}
+.device {
+	display: none;
+	background-color: #127F78;
+	color: #eee;
+	margin-top: 36px;
+	height: 50px;
+	cursor: pointer;
+	-webkit-box-shadow: -1px -1px 40px #127F78;
+	-moz-box-shadow: -1px -1px 40px #127F78;
+}
+.device-font-c {
+	font-size: 30px;
+	font-weight: bold;
+	color: #127F78;
+}
 
 /*------------------------footer---------------------------*/
 #footer {
