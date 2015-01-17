@@ -2,11 +2,10 @@
  * Created by luolinjia on 10/13/2014.
  * Updated by luolinjia on 10/16/2014.
  * Updated by luolinjia on 12/11/2014.
- * Updated by luolinjia on 01/17/2015.
+ * Updated by luolinjia on 01/17/2015. // add the mobile device and the adapt layout
  */
 
 $(function(){
-	
 	var point = $('#point'), iPost = $('#w-post'), iAbout = $('#w-about'), iTags = $('#w-tags'), iEn = $('#w-en'), word = $('#word');
 	
 	var _ = {
@@ -48,6 +47,7 @@ $(function(){
 				} break;
 				default: break;
 			}
+
 		}, changeAdaptLayout: function (o) {
 			if (o.width() < 600) { 
 				//show Chinese and English 
@@ -59,6 +59,25 @@ $(function(){
 			}
 		}
 	};
+	
+	// tell whether it's a mobile device
+	var isMobile = {  
+		Android: function() {  
+			return navigator.userAgent.match(/Android/i) ? true : false;  
+		},  
+		BlackBerry: function() {  
+			return navigator.userAgent.match(/BlackBerry/i) ? true : false;  
+		},  
+		iOS: function() {  
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;  
+		},  
+		Windows: function() {  
+			return navigator.userAgent.match(/IEMobile/i) ? true : false;  
+		},  
+		any: function() {  
+			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());  
+		}  
+	};  
 	
 	//show original
 	point.mouseover(function() {
@@ -86,4 +105,10 @@ $(function(){
 		_.changeAdaptLayout(bodyObj);
 	}); 
     
+	// add the mobile device
+	if (isMobile.any()) {
+		$('#wrap, #imgBox').hide();
+		$('#device, .device').show();
+	}
+	
 });
