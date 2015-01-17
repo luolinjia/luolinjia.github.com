@@ -2,9 +2,8 @@
  * Created by luolinjia on 10/13/2014.
  * Updated by luolinjia on 10/16/2014.
  * Updated by luolinjia on 12/11/2014.
- * Updated by luolinjia on 01/17/2015. // add the mobile device and the adapt layout
+ * Updated by luolinjia on 01/17/2015.// add the mobile device and the adapt layout
  */
-
 $(function(){
 	var point = $('#point'), iPost = $('#w-post'), iAbout = $('#w-about'), iTags = $('#w-tags'), iEn = $('#w-en'), word = $('#word');
 	
@@ -57,6 +56,10 @@ $(function(){
 				$('#wrap, #imgBox').show();
 				$('#device, .device').hide();
 			}
+		}, jumpToDetailed: function (obj, link) {
+			obj.click(function () {
+				window.location = link;
+			});
 		}
 	};
 	
@@ -96,14 +99,16 @@ $(function(){
 	_.showWord(iEn, 'http://ideex.name/en');
 
 	$('img').hide();
+	_.jumpToDetailed($('#chinBlog'), 'http://ideex.name/cn');
+	_.jumpToDetailed($('#engBlog'), 'http://ideex.name/en');
 	
 	// add the adaptable layout
-	var bodyObj = $('body');
-	_.changeAdaptLayout(bodyObj);
-	
-	$(window).resize(function() {
-		_.changeAdaptLayout(bodyObj);
-	}); 
+//	var bodyObj = $('body');
+//	_.changeAdaptLayout(bodyObj);
+//	
+//	$(window).resize(function() {
+//		_.changeAdaptLayout(bodyObj);
+//	}); 
     
 	// add the mobile device
 	if (isMobile.any()) {
