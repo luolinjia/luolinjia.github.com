@@ -43,6 +43,7 @@
 
 body {
 	font-family: "sinanova", "PMingLiu", "Microsoft YaHei", sans-serif;
+	font-size: 2.5em;
 	margin: 0;
     padding: 0;
 }
@@ -131,22 +132,22 @@ body {
 
 /*------------------------device---------------------------*/
 #device {
-	margin: 20px;
+	display: none;
+	margin: 5em;
 	text-align: center;
-	line-height: 50px;
+	line-height: 2em;
 }
 .device {
 	display: none;
 	background-color: #127F78;
 	color: #eee;
-	margin-top: 36px;
-	height: 50px;
+	margin-top: 2em;
+	height: 2em;
 	cursor: pointer;
 	-webkit-box-shadow: -1px -1px 40px #127F78;
 	-moz-box-shadow: -1px -1px 40px #127F78;
 }
 .device-font-c {
-	font-size: 30px;
 	font-weight: bold;
 	color: #127F78;
 }
