@@ -235,6 +235,7 @@ p {
 
 .center-content .pad .post-logo img{
     max-width: 360px;
+    width: 100%;
     -webkit-box-shadow: -1px -1px 40px #127F78;
     -moz-box-shadow: -1px -1px 40px #127F78;
     box-shadow: -1px -1px 40px #127F78;
@@ -255,7 +256,6 @@ p {
 
 .center-content .tags {
     margin-left: 1em;
-
 }
 
 .center-content .post-title-desc {
@@ -275,6 +275,7 @@ p {
 
 .center-content .pad img {
     max-width: 600px;
+    width: 100%;
     margin: 4px auto;
     -webkit-box-shadow: -1px -1px 40px #127F78;
     -moz-box-shadow: -1px -1px 40px #127F78;
@@ -415,4 +416,51 @@ h3, h4, h5, h6 {
 
 #footer a:hover {
     border-bottom: 1px dashed #2fadca;
+}
+
+/*------------update the adapt layout-----------*/
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 20px;
+    }
+    p {
+        font-size: 20px;
+    }
+    li {
+        margin-left: 0;
+    }
+    #header {
+        background-color: #eee;
+        border-bottom: 1px solid #ddd;
+    }
+    #menu ul {
+        float: none;
+    }
+    .center-content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-top: 80px;
+    }
+    .center-content .pad {
+        font-size: 20px;
+    }
+    .center-content .pad .post-logo {
+        text-align: left;
+    }
+    .center-content .post-title {
+        left: 0;
+    }
+    .center-content .post-title-desc {
+        left: 0;
+    }
+    .content {
+        margin: 20px;
+    }
+    .center-content .pad .post-logo img {
+        max-width: 100%;
+    }
+    .listing-item time {
+        padding-left: 1.4em;
+    }
 }
