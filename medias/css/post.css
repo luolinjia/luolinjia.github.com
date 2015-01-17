@@ -450,6 +450,7 @@ h3, h4, h5, h6 {
     }
     .center-content .post-title {
         left: 0;
+        padding-bottom: 15px;
     }
     .center-content .post-title-desc {
         left: 0;
