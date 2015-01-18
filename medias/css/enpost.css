@@ -391,7 +391,7 @@ h3, h4, h5, h6 {
     border-bottom: 1px dashed #2fadca;
 }
 
-/******************update the adapt layout*******************/
+/*------------update the adapt layout-----------*/
 @media screen and (max-width: 600px) {
     body {
         font-size: 20px;
@@ -399,15 +399,16 @@ h3, h4, h5, h6 {
     p {
         font-size: 20px;
     }
-    li {
-        margin-left: 0;
-    }
     #header {
         background-color: #eee;
         border-bottom: 1px solid #ddd;
+        opacity: 0.9;
     }
     #menu ul {
         float: none;
+    }
+    .iconfont {
+        font-size: 25px;
     }
     .center-content {
         width: 100%;
@@ -423,6 +424,7 @@ h3, h4, h5, h6 {
     }
     .center-content .post-title {
         left: 0;
+        padding-bottom: 15px;
     }
     .center-content .post-title-desc {
         left: 0;
@@ -433,7 +435,22 @@ h3, h4, h5, h6 {
     .center-content .pad .post-logo img {
         max-width: 100%;
     }
+    .listing-item {
+        display: none;
+    }
+    .listing-item a {
+        padding-left: 0.5em;
+    }
     .listing-item time {
-        padding-left: 1.4em;
+        padding-left: 0;
+    }
+    .listing li {
+        margin-left: 0;
+        margin-bottom: 1em;
+        line-height: 2em;
+    }
+    .listing .listing-logo {
+        width: 2em;
+        height: 2em;
     }
 }
