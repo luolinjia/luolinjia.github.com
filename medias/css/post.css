@@ -34,7 +34,7 @@ body {
     padding: 0;
 }
 
-li {
+li, .listing li {
     margin-left: 1.4em;
 }
 
@@ -429,9 +429,13 @@ h3, h4, h5, h6 {
     #header {
         background-color: #eee;
         border-bottom: 1px solid #ddd;
+        opacity: 0.9;
     }
     #menu ul {
         float: none;
+    }
+    .iconfont {
+        font-size: 25px;
     }
     .center-content {
         width: 100%;
@@ -458,7 +462,22 @@ h3, h4, h5, h6 {
     .center-content .pad .post-logo img {
         max-width: 100%;
     }
+    .listing-item {
+        display: none;
+    }
+    .listing-item a {
+        padding-left: 0.5em;
+    }
     .listing-item time {
-        padding-left: 1.4em;
+        padding-left: 0;
+    }
+    .listing li {
+        margin-left: 0;
+        margin-bottom: 1em;
+        line-height: 2em;
+    }
+    .listing .listing-logo {
+        width: 2em;
+        height: 2em;
     }
 }
