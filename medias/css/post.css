@@ -427,9 +427,9 @@ h3, h4, h5, h6 {
         font-size: 20px;
     }
     #header {
-        background-color: #eee;
-        border-bottom: 1px solid #ddd;
-        opacity: 0.9;
+        /*background-color: #eee;*/
+        /*border-bottom: 1px solid #ddd;*/
+        opacity: 0.95;
     }
     #menu ul {
         float: none;
