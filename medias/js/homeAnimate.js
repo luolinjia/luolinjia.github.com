@@ -93,14 +93,14 @@ $(function(){
 		word.empty();
 	});
 
-	_.showWord(iPost, 'http://ideex.name/cn');
-	_.showWord(iAbout, 'http://ideex.name/cn/about');
-	_.showWord(iTags, 'http://ideex.name/cn/tags');
-	_.showWord(iEn, 'http://ideex.name/en');
+	_.showWord(iPost, 'http://luolinjia.com/cn');
+	_.showWord(iAbout, 'http://luolinjia.com/cn/about');
+	_.showWord(iTags, 'http://luolinjia.com/cn/tags');
+	_.showWord(iEn, 'http://luolinjia.com/en');
 
 	$('img').hide();
-	_.jumpToDetailed($('#chinBlog'), 'http://ideex.name/cn');
-	_.jumpToDetailed($('#engBlog'), 'http://ideex.name/en');
+	_.jumpToDetailed($('#chinBlog'), 'http://luolinjia.com/cn');
+	_.jumpToDetailed($('#engBlog'), 'http://luolinjia.com/en');
 	
 	// add the adaptable layout
 //	var bodyObj = $('body');
