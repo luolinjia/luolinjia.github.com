@@ -280,22 +280,22 @@ p {
     box-shadow: -1px -1px 40px #127F78;
 }
 
-.center-content .content_post li {
+.center-content .content li {
     list-style-type: disc;
     padding: .2em 0;
 }
 
-.center-content .content_post ul, ol {
+.center-content .content ul, .center-content .content ol {
     list-style-position: inside;
     font-size: 16px;
     margin: 20px 0;
 }
 
-.center-content .content_post ol ul, ul ol, ul ul, ol ol {
+.center-content .content ol ul, .center-content .content ul ol, .center-content .content ul ul, .center-content .content ol ol {
     margin-left: 1em;
 }
 
-.center-content .content_post ol ul li, ul ol li, ul ul li, ol ol li {
+.center-content .content ol ul li, .center-content .content ul ol li, .center-content .content ul ul li, .center-content .content ol ol li {
     list-style-type: circle;
 }
 .listing .listing-logo {
