@@ -298,6 +298,16 @@ p {
 .center-content .content ol ul li, .center-content .content ul ol li, .center-content .content ul ul li, .center-content .content ol ol li {
     list-style-type: circle;
 }
+
+.listing ul {
+    font-size: 14px;
+    list-style-position: inside;
+}
+
+.listing ul li {
+    list-style-type: none;
+}
+
 .listing .listing-logo {
     float: left;
     display: block;
@@ -309,29 +319,29 @@ p {
 }
 .listing .listing-logo:hover {
 
-    animation-name:chgcolor;
-    animation-duration:1s;
-    animation-timing-function:linear;
-    animation-iteration-count:infinite;
-    animation-direction:alternate;
+    /*animation-name:chgcolor;*/
+    /*animation-duration:1s;*/
+    /*animation-timing-function:linear;*/
+    /*animation-iteration-count:infinite;*/
+    /*animation-direction:alternate;*/
 
-    -moz-animation-name:chgcolor;
-    -moz-animation-duration:1s;
-    -moz-animation-timing-function:linear;
-    -moz-animation-iteration-count:infinite;
-    -moz-animation-direction:alternate;
+    /*-moz-animation-name:chgcolor;*/
+    /*-moz-animation-duration:1s;*/
+    /*-moz-animation-timing-function:linear;*/
+    /*-moz-animation-iteration-count:infinite;*/
+    /*-moz-animation-direction:alternate;*/
 
-    -webkit-animation-name:chgcolor;
-    -webkit-animation-duration:1s;
-    -webkit-animation-timing-function:linear;
-    -webkit-animation-iteration-count:infinite;
-    -webkit-animation-direction:alternate;
+    /*-webkit-animation-name:chgcolor;*/
+    /*-webkit-animation-duration:1s;*/
+    /*-webkit-animation-timing-function:linear;*/
+    /*-webkit-animation-iteration-count:infinite;*/
+    /*-webkit-animation-direction:alternate;*/
 
-    -o-animation-name:chgcolor;
-    -o-animation-duration:1s;
-    -o-animation-timing-function:linear;
-    -o-animation-iteration-count:infinite;
-    -o-animation-direction:alternate;
+    /*-o-animation-name:chgcolor;*/
+    /*-o-animation-duration:1s;*/
+    /*-o-animation-timing-function:linear;*/
+    /*-o-animation-iteration-count:infinite;*/
+    /*-o-animation-direction:alternate;*/
 
 }
 .listing-item, .listing-seperator {
