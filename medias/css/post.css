@@ -281,7 +281,7 @@ p {
 }
 
 .center-content .content li {
-    list-style-type: disc;
+    /*list-style-type: disc;*/
     padding: .2em 0;
 }
 
