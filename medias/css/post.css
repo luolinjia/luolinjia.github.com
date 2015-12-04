@@ -42,6 +42,9 @@ p {
     color: #333;
     margin: 0 0 15px;
 }
+.bdsharebuttonbox {
+    float: left;
+}
 
 /*-------------------------iconfont--------------------------*/
 .iconfont {
