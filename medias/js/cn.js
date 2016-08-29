@@ -61,7 +61,7 @@ var currentScroll = 0,
                 if (logoWord) {
                     logoWord.fadeOut(50, function () {
                         self.empty();
-                    })
+                    });
                 }
             });
         }
