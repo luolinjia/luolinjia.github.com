@@ -10,7 +10,7 @@ $(function(){
 	var _ = {
 		showWord: function(obj, link){
 			obj.mouseover(function() {
-				var thiz = $(this), imgs = $('img', $('#imgs')),
+				var thiz = $(this), imgs = $('#imgs img'),
 					relatedNo = thiz.attr('data-no');
 				_.switchPic(relatedNo, imgs);
 			}).mouseleave(function () {
@@ -46,41 +46,29 @@ $(function(){
 				} break;
 				default: break;
 			}
-
-		}, changeAdaptLayout: function (o) {
-			if (o.width() < 600) { 
-				//show Chinese and English 
-				$('#wrap, #imgBox').hide();
-				$('#device, .device').show();
-			}else{ 
-				$('#wrap, #imgBox').show();
-				$('#device, .device').hide();
-			}
-		}, jumpToDetailed: function (obj, link) {
-			obj.click(function () {
-				window.location = link;
-			});
 		}
 	};
-	
+
 	// tell whether it's a mobile device
-	var isMobile = {  
-		Android: function() {  
-			return navigator.userAgent.match(/Android/i) ? true : false;  
-		},  
-		BlackBerry: function() {  
-			return navigator.userAgent.match(/BlackBerry/i) ? true : false;  
-		},  
-		iOS: function() {  
-			return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;  
-		},  
-		Windows: function() {  
-			return navigator.userAgent.match(/IEMobile/i) ? true : false;  
-		},  
-		any: function() {  
-			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());  
-		}  
-	};  
+	var isMobile = navigator.userAgent.toLowerCase().match(/mobile/ig) ? true : false;
+
+	// var isMobile = {
+	// 	Android: function() {
+	// 		return navigator.userAgent.match(/Android/i) ? true : false;
+	// 	},
+	// 	BlackBerry: function() {
+	// 		return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+	// 	},
+	// 	iOS: function() {
+	// 		return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+	// 	},
+	// 	Windows: function() {
+	// 		return navigator.userAgent.match(/IEMobile/i) ? true : false;
+	// 	},
+	// 	any: function() {
+	// 		return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+	// 	}
+	// };
 	
 	//show original
 	point.mouseover(function() {
@@ -99,19 +87,9 @@ $(function(){
 	_.showWord(iEn, 'http://luolinjia.com/en');
 
 	$('img').hide();
-	_.jumpToDetailed($('#chinBlog'), 'http://luolinjia.com/cn');
-	_.jumpToDetailed($('#engBlog'), 'http://luolinjia.com/en');
-	
-	// add the adaptable layout
-//	var bodyObj = $('body');
-//	_.changeAdaptLayout(bodyObj);
-//	
-//	$(window).resize(function() {
-//		_.changeAdaptLayout(bodyObj);
-//	}); 
     
 	// add the mobile device
-	if (isMobile.any()) {
+	if (isMobile) {
 		$('#wrap, #imgBox').hide();
 		$('#device, .device').show();
 	}
