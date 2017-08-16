@@ -134,22 +134,12 @@ body {
 #device {
 	display: none;
 	margin: 5em;
-	text-align: center;
+	text-align: right;
 	line-height: 2em;
 }
-.device {
-	display: none;
-	background-color: #127F78;
-	color: #eee;
-	margin-top: 2em;
-	height: 2em;
-	cursor: pointer;
-	-webkit-box-shadow: -1px -1px 40px #127F78;
-	-moz-box-shadow: -1px -1px 40px #127F78;
-}
-.device-font-c {
-	font-weight: bold;
-	color: #127F78;
+#device a {
+    font-size: 3em;
+    color: #127F78;
 }
 
 /*------------------------footer---------------------------*/
