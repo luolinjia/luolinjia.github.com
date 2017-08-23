@@ -1,6 +1,7 @@
 /**
  * Created by luolinjia on 10/14/2014.
  * Updated by luolinjia on 12/13/2014. -- Add the show/hide function in the post list.
+ * Updated by luolinjia on 08/23/2017. -- Close the left top logo effect regarding displaying the relevant well-known sayings.
  */
 var currentScroll = 0,
     allWords = [{
@@ -72,7 +73,8 @@ $(function(){
         myScroll();
     });
 
-    _.bindHoverBeautifulWords();
+    // This function has some issues, close the effect on the little logo.   -- update 2017.8.23
+    // _.bindHoverBeautifulWords();
     _.bindToggle();
 });
 

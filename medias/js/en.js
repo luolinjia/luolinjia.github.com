@@ -1,5 +1,6 @@
 /**
- * Created by luolinj on 10/14/2014.
+ * Created by luolinjia on 10/14/2014.
+ * Updated by luolinjia on 08/23/2017. -- Close the left top logo effect regarding displaying the relevant well-known sayings.
  */
 var currentScroll = 0,
     allWords = [{
@@ -70,7 +71,8 @@ $(function(){
         myScroll();
     });
 
-    _.bindShowBeautifulWords();
+    // update on 2017.8.23
+    //_.bindShowBeautifulWords();
     _.bindToggle();
 });
 
