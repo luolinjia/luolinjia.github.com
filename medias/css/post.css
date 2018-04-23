@@ -469,6 +469,12 @@ h3, h4, h5, h6 {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
+    border: 1px solid #127F78;
+    background: #fff;
+}
+#comment .vcontrol .vsubmit.vbtn:hover {
+    background: #15aba1;
+    border: 1px solid #15aba1;
 }
 
 /*------------update the adapt layout-----------*/
