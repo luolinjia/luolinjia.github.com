@@ -477,6 +477,9 @@ h3, h4, h5, h6 {
     border: 1px solid #15aba1;
     color: #fff;
 }
+#comment .vcontrol .col.col-60 {
+    visibility: hidden;
+}
 
 /*------------update the adapt layout-----------*/
 @media screen and (max-width: 600px) {
