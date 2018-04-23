@@ -435,19 +435,32 @@ h3, h4, h5, h6 {
 
 /*--------------------------comments------------------------------*/
 #comment {
-    margin-top: 10px!important;
+    margin-top: 10px;
 }
 #comment .info {
-    display: none!important;
+    display: none;
 }
 #comment .veditor.vinput {
-    min-height: 4.75rem!important;
+    min-height: 4.75rem;
+    border: 1px solid #ddd;
+    margin-top: 0.6rem;
+    padding: 0.6rem;
 }
 #comment .vwrap {
     border: 1px solid #ddd;
-    -webkit-border-radius: 0!important;
-    -moz-border-radius: 0!important;
-    border-radius: 0!important;
+    padding: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+#comment .vwrap .vheader .vinput {
+    width: 11.83rem;
+    border: 1px solid #ddd;
+    margin-right: 1rem;
+    padding: 0.6rem;
+}
+#comment .vwrap .vheader .vinput.vlink {
+    margin-right: 0;
 }
 #comment .vctrl .vemoji-btn:hover, #comment .vctrl .vpreview-btn:hover {
     color: #15aba1;
