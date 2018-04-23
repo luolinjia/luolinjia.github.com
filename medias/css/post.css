@@ -475,6 +475,7 @@ h3, h4, h5, h6 {
 #comment .vcontrol .vsubmit.vbtn:hover {
     background: #15aba1;
     border: 1px solid #15aba1;
+    color: #fff;
 }
 
 /*------------update the adapt layout-----------*/
