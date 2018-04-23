@@ -449,6 +449,14 @@ h3, h4, h5, h6 {
     -moz-border-radius: 0!important;
     border-radius: 0!important;
 }
+#comment .vctrl .vemoji-btn:hover, #comment .vctrl .vpreview-btn:hover {
+    color: #15aba1;
+}
+#comment .vcontrol .vsubmit.vbtn {
+    -webkit-border-radius: 0!important;
+    -moz-border-radius: 0!important;
+    border-radius: 0!important;
+}
 
 /*------------update the adapt layout-----------*/
 @media screen and (max-width: 600px) {
