@@ -433,6 +433,23 @@ h3, h4, h5, h6 {
     border-bottom: 1px dashed #2fadca;
 }
 
+/*--------------------------comments------------------------------*/
+#comment {
+    margin-top: 10px!important;
+}
+#comment .info {
+    display: none!important;
+}
+#comment .veditor.vinput {
+    min-height: 4.75rem!important;
+}
+#comment .vwrap {
+    border: 1px solid #ddd;
+    -webkit-border-radius: 0!important;
+    -moz-border-radius: 0!important;
+    border-radius: 0!important;
+}
+
 /*------------update the adapt layout-----------*/
 @media screen and (max-width: 600px) {
     body {
