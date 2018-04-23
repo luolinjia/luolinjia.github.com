@@ -447,7 +447,7 @@ h3, h4, h5, h6 {
     padding: 0.6rem;
 }
 #comment .vwrap {
-    border: 1px solid #ddd;
+    border: none;
     padding: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
