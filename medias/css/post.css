@@ -497,7 +497,7 @@ h3, h4, h5, h6 {
     #header {
         /*background-color: #eee;*/
         /*border-bottom: 1px solid #ddd;*/
-        opacity: 0.95;
+        opacity: 1;
     }
     #menu ul {
         float: none;
@@ -547,5 +547,9 @@ h3, h4, h5, h6 {
     .listing .listing-logo {
         width: 2em;
         height: 2em;
+    }
+    #comment .vwrap .vheader .vinput {
+        width: 100%;
+        margin-top: 0.6rem;
     }
 }
