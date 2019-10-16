@@ -238,9 +238,9 @@ p {
 .center-content .pad .post-logo img{
     max-width: 360px;
     width: 100%;
-    -webkit-box-shadow: -1px -1px 40px #127F78;
-    -moz-box-shadow: -1px -1px 40px #127F78;
-    box-shadow: -1px -1px 40px #127F78;
+    1-webkit-box-shadow: -1px -1px 40px #127F78;
+    1-moz-box-shadow: -1px -1px 40px #127F78;
+    1box-shadow: -1px -1px 40px #127F78;
 }
 
 .center-content .post-title {
@@ -279,9 +279,9 @@ p {
     max-width: 600px;
     width: 100%;
     margin: 4px auto;
-    -webkit-box-shadow: -1px -1px 40px #127F78;
-    -moz-box-shadow: -1px -1px 40px #127F78;
-    box-shadow: -1px -1px 40px #127F78;
+    1-webkit-box-shadow: -1px -1px 40px #127F78;
+    1-moz-box-shadow: -1px -1px 40px #127F78;
+    1box-shadow: -1px -1px 40px #127F78;
 }
 
 .center-content .content li {
