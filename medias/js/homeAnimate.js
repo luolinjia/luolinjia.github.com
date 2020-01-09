@@ -3,6 +3,7 @@
  * Updated by luolinjia on 10/16/2014.
  * Updated by luolinjia on 12/11/2014.
  * Updated by luolinjia on 01/17/2015.// add the mobile device and the adapt layout
+ * Upadted by luolinjia on 06/17/2019. // Change the main display style and updated to v4.0
  */
 $(function(){
 	var point = $('#point'), iPost = $('#w-post'), iAbout = $('#w-about'), iTags = $('#w-tags'), iEn = $('#w-en'), word = $('#word');

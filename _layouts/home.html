@@ -26,55 +26,67 @@
 </head>
 <body>
 
+    <p class="life-word"></p>
+
+    <div class="life">
+        {% for i in (1..64) %}
+            {% if i <= 30 %}
+                <div class="item record"></div>
+            {% else %}
+                <div class="item"></div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
     <!-- wrap start -->
-    <div id="wrap">
+    <!-- <div id="wrap"> -->
         <!-- content start -->
-        <div id="content">
-            <div id="point" data-no="../medias/img/01.jpg"></div>
-            <div id="menu">
-                <div id="w-post" class="item" title="post" data-no="../medias/img/02.jpg"></div>
-                <div id="w-about" class="item" title="about" data-no="../medias/img/03.jpg"></div>
-                <div id="w-tags" class="item" title="tags" data-no="../medias/img/04.jpg"></div>
+        <!-- <div id="content"> -->
+            <!-- <div id="point" data-no="../medias/img/01.jpg"></div> -->
+            <!-- <div id="menu"> -->
+                <!-- <div id="w-post" class="item" title="post" data-no="../medias/img/02.jpg"></div> -->
+                <!-- <div id="w-about" class="item" title="about" data-no="../medias/img/03.jpg"></div> -->
+                <!-- <div id="w-tags" class="item" title="tags" data-no="../medias/img/04.jpg"></div> -->
                 <!-- <div id="w-en" class="item" title="English Blog" data-no="../medias/img/05.jpg"></div> -->
-                <div class="cb"></div>
-            </div>
-        </div>
+                <!-- <div class="cb"></div> -->
+            <!-- </div> -->
+        <!-- </div> -->
         <!-- content end -->
 
         <!-- footer start -->
-        <div id="footer">
+        <!-- <div id="footer">
             <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2011 - {{site.time | date:"%Y"}} by <a href="http://luolinjia.com">Linjia Luo</a> | <span class="label label-info">{{site.time | date:"%Y-%m-%d %H:%M:%S"}}</span></small></p>
-        </div>
+        </div> -->
         <!-- footer end -->
     </div>
     <!-- wrap end -->
     
     <!-- images start -->
-    <div id="imgBox">
-        <div id="imgs">
-            <img src="../medias/img/01.jpg"/>
-            <img src="../medias/img/02.jpg"/>
-            <img src="../medias/img/03.jpg"/>
-            <img src="../medias/img/04.jpg"/>
+    <!-- <div id="imgBox"> -->
+        <!-- <div id="imgs"> -->
+            <!-- <img src="../medias/img/01.jpg"/> -->
+            <!-- <img src="../medias/img/02.jpg"/> -->
+            <!-- <img src="../medias/img/03.jpg"/> -->
+            <!-- <img src="../medias/img/04.jpg"/> -->
             <!-- <img src="../medias/img/05.jpg"/> -->
-        </div>
-        <div id="word"></div>
-    </div>
+        <!-- </div> -->
+        <!-- <div id="word"></div> -->
+    <!-- </div> -->
     <!-- images end -->
 	
     <!-- device start -->
-    <div id="device">
+    <!-- <div id="device"> -->
         <!-- update: 2017.8.16 -->
         <!--<div class="device-font-c">欢迎来到我的博客</div>-->
         <!--<div>Welcome to Karl's Blog</div>-->
         <!--<a href="/cn"><div id="chinBlog" class="device">Blog</div></a>-->
         <!--<div id="engBlog" class="device">English Blog</div>-->
-        <a href="/cn">Blog</a>
-    </div>
+        <!-- <a href="/cn">Blog</a> -->
+    <!-- </div> -->
     <!-- device end -->
     
     <!-- NOTE: if you fork this template, please EDIT to change the google account to your accout or DEL the JS code -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-29874870-1']);
         _gaq.push(['_trackPageview']);
@@ -84,6 +96,6 @@
             ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
-    </script>
+    </script> -->
 </body>
 </html>
